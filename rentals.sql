@@ -1,0 +1,120 @@
+-- use car_rentals;
+-- drop table rentals;
+
+create table rentals (
+	id int AUTO_INCREMENT primary key,
+	Make VARCHAR(50),
+	Model VARCHAR(50),
+	rent_date DATE,
+	return_date DATE,
+	rent_place VARCHAR(50),
+	return_place VARCHAR(50)
+);
+
+
+select * from rentals;
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Lexus', 'LX', '2021-07-06', '2020-09-12', 'Georgia', 'Minnesota');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Chevrolet', 'G-Series G10', '2020-11-30', '2020-11-10', 'Georgia', 'Mississippi');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Acura', 'RL', '2021-06-19', '2021-06-04', 'Ohio', 'Washington');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Kia', 'Sephia', '2021-01-11', '2021-06-17', 'New York', 'Texas');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Dodge', 'Stratus', '2020-12-05', '2020-12-06', 'Georgia', 'Missouri');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Ford', 'Transit Connect', '2020-08-23', '2020-09-20', 'Idaho', 'Kansas');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Chevrolet', 'Blazer', '2020-09-18', '2021-06-15', 'Georgia', 'District of Columbia');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Nissan', 'Sentra', '2021-04-05', '2020-09-07', 'Washington', 'Iowa');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Pontiac', '1000', '2020-07-26', '2021-07-16', 'Florida', 'West Virginia');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Mitsubishi', 'Eclipse', '2021-03-12', '2021-04-26', 'New York', 'Nevada');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Pontiac', 'Firebird', '2021-01-01', '2021-03-28', 'Alaska', 'Indiana');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Chrysler', '300', '2020-08-09', '2020-11-12', 'District of Columbia', 'Texas');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Mitsubishi', 'Space', '2021-06-02', '2021-03-16', 'Florida', 'Pennsylvania');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Land Rover', 'Discovery', '2021-01-05', '2021-06-30', 'Nebraska', 'California');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Mitsubishi', 'Mirage', '2020-11-12', '2020-09-13', 'Florida', 'Pennsylvania');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Lotus', 'Esprit', '2021-05-20', '2020-12-10', 'Texas', 'Massachusetts');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Mercury', 'Villager', '2021-01-27', '2021-04-09', 'Virginia', 'Florida');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('GMC', 'Yukon', '2021-02-09', '2021-06-19', 'Florida', 'Pennsylvania');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Nissan', 'Sentra', '2021-06-23', '2021-06-14', 'Ohio', 'Missouri');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Oldsmobile', 'Alero', '2021-01-21', '2020-09-23', 'Maryland', 'Minnesota');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Chevrolet', 'Avalanche 2500', '2021-03-14', '2020-09-27', 'Maryland', 'Kansas');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Chevrolet', 'Camaro', '2021-05-30', '2020-08-20', 'New York', 'Arizona');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Oldsmobile', '98', '2020-10-17', '2021-04-17', 'South Carolina', 'Louisiana');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Volkswagen', 'R32', '2020-08-26', '2021-03-22', 'Texas', 'North Carolina');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Buick', 'Park Avenue', '2020-08-09', '2020-07-31', 'Florida', 'Arizona');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Chevrolet', 'Silverado 1500', '2020-08-10', '2021-05-17', 'Washington', 'Oregon');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Porsche', '911', '2020-10-29', '2020-08-16', 'Kansas', 'Texas');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Toyota', 'Paseo', '2021-01-10', '2020-07-29', 'New York', 'New Jersey');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Land Rover', 'Range Rover', '2020-12-31', '2020-10-27', 'Texas', 'Missouri');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Chevrolet', 'Silverado 1500', '2020-12-28', '2021-04-21', 'Indiana', 'Texas');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Dodge', 'Ram 3500', '2020-12-20', '2021-01-27', 'New York', 'Nebraska');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Ford', 'Probe', '2021-05-27', '2020-10-22', 'Maryland', 'Hawaii');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Subaru', 'Tribeca', '2021-06-01', '2021-06-14', 'Ohio', 'Michigan');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Nissan', 'Pathfinder', '2020-09-13', '2021-01-27', 'Texas', 'California');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Buick', 'Regal', '2020-09-24', '2020-08-16', 'Nebraska', 'Texas');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Dodge', 'Ram 1500', '2020-09-29', '2020-12-06', 'Texas', 'District of Columbia');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Lincoln', 'Continental', '2021-06-29', '2020-11-16', 'North Carolina', 'Massachusetts');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Honda', 'del Sol', '2020-10-29', '2021-06-26', 'New York', 'Connecticut');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Pontiac', 'Sunfire', '2021-04-09', '2020-11-07', 'Texas', 'Illinois');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Volkswagen', 'New Beetle', '2021-03-25', '2021-06-15', 'Pennsylvania', 'Louisiana');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Peugeot', '207', '2021-02-13', '2020-10-11', 'West Virginia', 'North Carolina');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Mercedes-Benz', 'C-Class', '2021-05-29', '2020-07-28', 'District of Columbia', 'Connecticut');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Lexus', 'LS', '2020-12-29', '2020-11-04', 'California', 'Texas');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Audi', 'A4', '2020-11-17', '2021-03-25', 'Kansas', 'District of Columbia');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Chevrolet', 'Impala', '2021-06-13', '2021-04-16', 'North Carolina', 'Pennsylvania');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Dodge', 'Durango', '2021-02-20', '2021-07-07', 'Texas', 'Illinois');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Suzuki', 'SJ', '2021-06-24', '2021-01-05', 'Indiana', 'New Mexico');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Infiniti', 'QX', '2021-05-14', '2021-04-14', 'New Mexico', 'Arkansas');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Ford', 'Bronco II', '2021-01-23', '2020-10-10', 'Florida', 'West Virginia');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Mitsubishi', 'Galant', '2021-06-23', '2020-08-25', 'Delaware', 'Kansas');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Land Rover', 'Freelander', '2021-06-12', '2020-08-13', 'California', 'California');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Hyundai', 'HED-5', '2021-03-26', '2021-03-01', 'New York', 'North Carolina');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Ford', 'Mustang', '2020-08-18', '2020-11-22', 'New York', 'Texas');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Toyota', 'Tacoma Xtra', '2020-11-10', '2020-07-25', 'Georgia', 'Texas');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Lexus', 'LS', '2020-08-29', '2021-04-01', 'California', 'Nevada');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Oldsmobile', 'Silhouette', '2021-06-18', '2021-07-04', 'Illinois', 'Hawaii');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Dodge', 'Ram', '2020-08-28', '2020-09-08', 'Texas', 'California');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Chrysler', 'Concorde', '2020-12-27', '2021-01-20', 'Maryland', 'Oklahoma');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Dodge', 'Neon', '2021-04-08', '2020-12-23', 'Pennsylvania', 'New Jersey');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Chevrolet', 'Express 1500', '2021-01-31', '2020-08-22', 'Alabama', 'Michigan');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Volvo', 'XC60', '2020-08-08', '2020-12-15', 'Georgia', 'Oklahoma');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Oldsmobile', 'Cutlass', '2021-03-12', '2020-09-17', 'Washington', 'Pennsylvania');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('GMC', 'Envoy', '2020-12-26', '2020-10-05', 'Texas', 'New Hampshire');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Land Rover', 'LR4', '2020-08-26', '2020-11-29', 'Pennsylvania', 'California');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Chevrolet', 'Monte Carlo', '2021-03-18', '2020-09-24', 'Texas', 'California');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Mazda', 'B-Series Plus', '2021-05-05', '2020-10-08', 'California', 'New York');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Chevrolet', 'Corvette', '2021-06-19', '2021-06-08', 'Colorado', 'Ohio');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Audi', 'A4', '2020-12-04', '2020-08-30', 'District of Columbia', 'Georgia');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Subaru', 'Justy', '2020-10-03', '2020-12-06', 'Colorado', 'District of Columbia');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Mercury', 'Grand Marquis', '2021-05-04', '2020-09-03', 'Texas', 'Oklahoma');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Geo', 'Metro', '2020-08-25', '2021-04-06', 'Pennsylvania', 'Florida');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Buick', 'Regal', '2021-04-10', '2021-02-15', 'Alabama', 'Idaho');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Dodge', 'Ram 2500', '2020-12-03', '2021-07-01', 'Florida', 'Michigan');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Infiniti', 'G35', '2021-07-13', '2020-12-28', 'Georgia', 'Texas');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Ford', 'Taurus X', '2020-10-18', '2021-02-03', 'Pennsylvania', 'Missouri');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Ford', 'Bronco II', '2020-09-05', '2021-07-06', 'Oregon', 'Texas');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Audi', '5000S', '2020-11-04', '2020-12-31', 'New Hampshire', 'Florida');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Toyota', 'Camry Hybrid', '2021-01-31', '2021-02-20', 'Utah', 'District of Columbia');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Chevrolet', '1500', '2020-10-25', '2021-07-17', 'Michigan', 'Hawaii');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('GMC', 'Yukon XL 2500', '2021-02-21', '2021-03-06', 'Maryland', 'Missouri');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Dodge', 'Caliber', '2020-08-16', '2020-11-29', 'Georgia', 'Mississippi');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Cadillac', 'XLR', '2020-09-21', '2020-09-03', 'New York', 'Georgia');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Mazda', 'CX-7', '2021-03-31', '2020-10-28', 'Illinois', 'California');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Hyundai', 'Sonata', '2021-01-22', '2020-12-02', 'Washington', 'California');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Nissan', 'Armada', '2020-08-17', '2021-04-27', 'Alabama', 'Florida');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Mazda', '626', '2021-05-12', '2020-07-29', 'California', 'Texas');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Ford', 'Ranger', '2021-04-24', '2021-02-14', 'Utah', 'Florida');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Hyundai', 'Tucson', '2021-07-20', '2020-08-11', 'Ohio', 'Texas');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Volkswagen', 'New Beetle', '2020-09-25', '2021-01-02', 'Colorado', 'Florida');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Jeep', 'Patriot', '2020-12-21', '2020-09-09', 'Ohio', 'Minnesota');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Subaru', 'B9 Tribeca', '2021-04-11', '2021-07-22', 'Texas', 'Texas');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Pontiac', 'Grand Am', '2020-12-21', '2021-04-13', 'District of Columbia', 'California');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Land Rover', 'Defender', '2021-05-31', '2021-02-01', 'Indiana', 'Florida');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Toyota', 'Camry Hybrid', '2020-12-29', '2020-08-03', 'Virginia', 'California');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Volkswagen', 'Rabbit', '2020-08-28', '2020-09-09', 'Tennessee', 'Minnesota');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Ford', 'Crown Victoria', '2021-05-15', '2020-10-04', 'Minnesota', 'Oklahoma');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Nissan', 'Xterra', '2021-07-17', '2020-07-31', 'Florida', 'Illinois');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Pontiac', 'Firefly', '2020-11-18', '2021-01-18', 'Colorado', 'Florida');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Isuzu', 'i-Series', '2021-02-03', '2020-09-08', 'Louisiana', 'New Mexico');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Cadillac', 'Escalade ESV', '2020-08-02', '2021-04-04', 'Florida', 'North Carolina');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Land Rover', 'Discovery', '2020-10-11', '2021-04-02', 'Indiana', 'California');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Honda', 'Accord Crosstour', '2021-07-09', '2021-02-16', 'California', 'California');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('GMC', 'Savana 2500', '2020-09-13', '2021-07-15', 'Alabama', 'Montana');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Chevrolet', 'Suburban 1500', '2020-10-29', '2021-04-18', 'Georgia', 'Texas');
+insert into rentals (Make, Model, rent_date, return_date, rent_place, return_place) values ('Mercedes-Benz', 'W123', '2021-02-12', '2021-03-07', 'Illinois', 'New York');
