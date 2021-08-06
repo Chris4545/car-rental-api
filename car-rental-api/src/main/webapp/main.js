@@ -159,9 +159,9 @@ editItem = function(id){
                 rent = JSON.parse(xhrEdit.response);
                 let submitButton = document.getElementById(`submitButton${id}`);
                 submitButton.parentElement.removeChild(submitButton);
-                let aToG = ['b','c','d','e','f','g'];
+                let columns = ['b','c','d','e','f','g'];
                 console.log(rent);
-                aToG.forEach(function(letter, index, array){
+                columns.forEach(function(letter, index, array){
                     editObj = document.getElementById(id + letter);
                     switch(letter){
                         case 'b': editObj.innerHTML = rent.make;
@@ -187,8 +187,8 @@ editItem = function(id){
     editMode = function(id){
         if(document.getElementById(`submitButton${id}`) == null)
         {
-        let aToG = ['b','c','d','e','f','g'];
-        aToG.forEach(function(letter, index, array){
+        let columns = ['b','c','d','e','f','g'];
+        columns.forEach(function(letter, index, array){
             editObj = document.getElementById(id + letter);
             let input = document.createElement("input");
             input.setAttribute("id", `inId${letter}${id}`);

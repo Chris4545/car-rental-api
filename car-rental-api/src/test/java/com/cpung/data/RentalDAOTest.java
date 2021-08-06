@@ -115,7 +115,6 @@ public class RentalDAOTest {
 	public void revertUpdate() {
 		try(RentalDAO dao = new RentalDAO()){
 			dao.updateRental(new Rental(2, "Chevrolet", "G-Series G10", "2020-11-30", "2020-11-10", "Georgia", "Mississippi"));
-			ass
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
