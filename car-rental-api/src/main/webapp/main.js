@@ -42,6 +42,12 @@ window.onload = function(){
                 rent = JSON.parse(xhrPost.response);
                 updateTable(rent);
                 alert("Successfully added rental");
+                document.getElementById("make").value = "";
+                document.getElementById("model").value = "";
+                document.getElementById("rent-date").value = "";
+                document.getElementById("return-date").value = "";
+                document.getElementById("rent-place").value = "";
+                document.getElementById("return-place").value = "";
             }else if(xhrPost.readyState === 4){
                 alert("There was an error adding your rental");
             }

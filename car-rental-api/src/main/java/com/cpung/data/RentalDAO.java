@@ -160,7 +160,7 @@ public Rental addRental(Rental rental, int rentalID) throws SQLException{
 			PreparedStatement stmt = connection.prepareStatement(sql);
 			stmt.setInt(1, rentalId);
 			ResultSet rs = stmt.executeQuery();
-			rs.next();
+			if(rs.next()) {
 				int id = rs.getInt("id");
 				String make = rs.getString("Make");
 				String model = rs.getString("Model");
@@ -169,8 +169,8 @@ public Rental addRental(Rental rental, int rentalID) throws SQLException{
 				String rentPlace = rs.getString("rent_place");
 				String returnPlace = rs.getString("return_place");
 				rental = new Rental(id, make, model, rentDate, returnDate, rentPlace, returnPlace);
-				
-			return rental;
+				return rental;
+			}
 			
 		} catch (SQLException e) {
 			e.printStackTrace();
