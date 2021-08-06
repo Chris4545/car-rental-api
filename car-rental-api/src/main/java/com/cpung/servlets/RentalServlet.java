@@ -23,7 +23,7 @@ public class RentalServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		List<Rental> rentals = new ArrayList<>();
 		try (RentalDAO dao = new RentalDAO()){
-			if(req.getParameter("id") != null) {
+			if(req.getParameter("id") != null && req.getParameter("id") != "") {
 				rentals.add(dao.getARental(Integer.parseInt(req.getParameter("id"))));
 			}else {
 				rentals = dao.getAllRentals();
